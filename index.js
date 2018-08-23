@@ -16,8 +16,6 @@ app.get('/gm', (req, res) => {
 //  res.sendFile(__dirname + '/public/test.html');
 });
 
-
-
 io.on('connection', (socket) => {
   socket.on('encounter info', (msg) => {
     io.emit('encounter info', msg);
