@@ -1,8 +1,8 @@
 const app = require('express')();
-var express = require('express');
+const express = require('express');
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-var path = require('path');
+const path = require('path');
 const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname + '/public')));
