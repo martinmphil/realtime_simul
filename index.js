@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 
 app.get('/gm', (req, res) => {
  res.sendFile(path.join(__dirname + '/public/simul.html'));
-//  res.sendFile(__dirname + '/public/test.html');
 });
 
 io.on('connection', (socket) => {
